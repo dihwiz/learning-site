@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Learning Hub</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body{
+    font-family: Arial;
+    background:#020617;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+h1{
+    font-size:50px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>📚 Learning Hub</h1>
+<p>My Educational Website</p>
+
+</body>
+</html>
