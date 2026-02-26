@@ -1,35 +1,83 @@
-body{
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
     font-family: Arial;
-    background: linear-gradient(135deg,#020617,#0f172a);
-    color:white;
-    text-align:center;
-    padding:40px;
 }
+
+body{
+    min-height:100vh;
+    background: linear-gradient(135deg,#020617,#030b2e,#0f172a);
+    color:white;
+}
+
+/* Center content */
+
+.content{
+    padding:60px;
+    text-align:center;
+}
+
+/* Title */
 
 h1{
-    font-size:50px;
+    font-size:55px;
+    margin-bottom:20px;
+    background: linear-gradient(90deg,#3b82f6,#8b5cf6);
+    -webkit-background-clip:text;
+    color:transparent;
 }
 
-.grid{
-    display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
-    gap:30px;
-    margin-top:60px;
-}
+/* Glass Card */
 
 .card{
-    background: rgba(255,255,255,0.05);
-    backdrop-filter: blur(20px);
+    margin:30px auto;
+    max-width:500px;
+
     padding:40px;
-    border-radius:25px;
-    text-decoration:none;
-    color:white;
-    font-size:22px;
-    transition:0.4s;
-    box-shadow:0 0 30px rgba(0,0,0,0.6);
+
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(25px);
+
+    border-radius:30px;
+
+    box-shadow:0 0 40px rgba(0,0,0,0.6);
+
+    transition:0.5s;
 }
 
 .card:hover{
-    transform: translateY(-12px) scale(1.05);
-    background:#1e40af;
+    transform: translateY(-12px) scale(1.03);
+    background: rgba(59,130,246,0.15);
+}
+
+/* Links */
+
+a{
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+}
+
+/* Sidebar */
+
+.sidebar{
+    position:fixed;
+    width:240px;
+    height:100vh;
+
+    padding:30px;
+
+    background: rgba(255,255,255,0.03);
+    backdrop-filter: blur(30px);
+}
+
+.sidebar a{
+    display:block;
+    margin:25px 0;
+    transition:0.3s;
+}
+
+.sidebar a:hover{
+    color:#3b82f6;
 }
