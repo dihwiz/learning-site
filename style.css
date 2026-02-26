@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'DotGothic16', sans-serif;
+    font-family:'Poppins', sans-serif;
 }
 
 body{
@@ -23,8 +21,8 @@ body::before{
     height:100%;
 
     background:
-    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url("R (1).jfif");
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    url("bg.jpg");
 
     background-size:cover;
     background-position:center;
@@ -35,7 +33,7 @@ body::before{
 /* Content */
 
 .content{
-    padding:60px;
+    padding:70px;
     text-align:center;
 }
 
@@ -43,25 +41,36 @@ body::before{
 
 h1{
     font-size:55px;
-    margin-bottom:20px;
+    font-weight:700;
 
     background: linear-gradient(90deg,#3b82f6,#8b5cf6);
     -webkit-background-clip:text;
     color:transparent;
+
+    margin-bottom:20px;
 }
 
-/* Glass Card */
+/* Grid */
+
+.grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap:35px;
+    margin-top:60px;
+}
+
+/* Cards */
 
 .card{
-    margin:30px auto;
-    max-width:500px;
-
-    padding:40px;
+    padding:45px;
+    border-radius:30px;
 
     background: rgba(255,255,255,0.05);
-    backdrop-filter: blur(25px);
+    backdrop-filter: blur(30px);
 
-    border-radius:30px;
+    text-decoration:none;
+    color:white;
+    font-size:22px;
 
     box-shadow:0 0 40px rgba(0,0,0,0.6);
 
@@ -69,37 +78,6 @@ h1{
 }
 
 .card:hover{
-    transform: translateY(-12px) scale(1.03);
-    background: rgba(59,130,246,0.15);
-}
-
-/* Links */
-
-a{
-    color:white;
-    text-decoration:none;
-    font-size:20px;
-}
-
-/* Sidebar */
-
-.sidebar{
-    position:fixed;
-    width:240px;
-    height:100vh;
-
-    padding:30px;
-
-    background: rgba(255,255,255,0.03);
-    backdrop-filter: blur(30px);
-}
-
-.sidebar a{
-    display:block;
-    margin:25px 0;
-    transition:0.3s;
-}
-
-.sidebar a:hover{
-    color:#3b82f6;
+    transform: translateY(-12px) scale(1.05);
+    background: rgba(59,130,246,0.2);
 }
