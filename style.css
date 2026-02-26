@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: Arial;
+    font-family:'DotGothic16', sans-serif;
 }
+
+body{
+    min-height:100vh;
+    color:white;
+}
+
+/* Background */
 
 body::before{
     content:"";
@@ -12,17 +21,18 @@ body::before{
     left:0;
     width:100%;
     height:100%;
+
     background:
     linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
     url("R (1).jfif");
 
     background-size:cover;
     background-position:center;
+
     z-index:-1;
 }
 
-
-/* Center content */
+/* Content */
 
 .content{
     padding:60px;
@@ -34,6 +44,7 @@ body::before{
 h1{
     font-size:55px;
     margin-bottom:20px;
+
     background: linear-gradient(90deg,#3b82f6,#8b5cf6);
     -webkit-background-clip:text;
     color:transparent;
